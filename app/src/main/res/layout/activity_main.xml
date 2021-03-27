@@ -39,15 +39,70 @@
     <TextView
         android:id="@+id/textOutput"
         android:layout_width="365dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="130dp"
         android:background="#F8F5F5"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintVertical_bias="0.102" />
+
+    <Button
+        android:id="@+id/LocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showLocation"
+        android:text="Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/LatitudeTextVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="Latitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOutput" />
+
+    <TextView
+        android:id="@+id/LongitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="Longitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LatitudeTextVIew" />
+
+    <TextView
+        android:id="@+id/LatitudeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="40.7128"
+        app:layout_constraintStart_toEndOf="@+id/LatitudeTextVIew"
+        app:layout_constraintTop_toBottomOf="@+id/textOutput" />
+
+    <TextView
+        android:id="@+id/LongitudeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="-74.0060"
+        app:layout_constraintStart_toEndOf="@+id/LongitudeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/LatitudeVal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
